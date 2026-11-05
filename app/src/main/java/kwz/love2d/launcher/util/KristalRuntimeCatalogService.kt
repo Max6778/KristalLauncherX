@@ -124,8 +124,12 @@ object KristalRuntimeCatalogService {
 
     internal fun isSupportedRuntimeAsset(name: String): Boolean {
         val normalized = name.lowercase()
-        return normalized.startsWith("kristal-") &&
-            (normalized.endsWith(".love") || normalized.endsWith("-love.zip"))
+        if (!normalized.startsWith("kristal")) return false
+        if (normalized.endsWith(".love") || normalized.endsWith("-love.zip")) return true
+        // Dev / nightly builds are not always named exactly like stable ones.
+        return normalized.endsWith(".zip") &&
+            "love" in normalized &&
+            listOf("win", "mac", "linux", "android", "example").none { it in normalized }
     }
 
     private fun runtimeAssetPriority(name: String): Int =

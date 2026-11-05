@@ -60,7 +60,7 @@ object GameLauncher {
         )
     }
 
-    fun launchGame(activity: AppCompatActivity, game: LoveGame) {
+    fun launchGame(activity: AppCompatActivity, game: LoveGame, skipVersionCheck: Boolean = false) {
         val kristalRuntime = if (game.isKristalMod) {
             KristalRuntimeStorage.selectedRuntimeForGame(activity, game.stableId) ?: run {
                 showMissingKristalRuntimeDialog(activity, game)
@@ -68,6 +68,10 @@ object GameLauncher {
             }
         } else {
             null
+        }
+        if (!skipVersionCheck && kristalRuntime != null && isRuntimeOlderThanMod(game, kristalRuntime)) {
+            showRuntimeVersionMismatchDialog(activity, game, kristalRuntime)
+            return
         }
         if (!launchMutex.tryLock()) {
             Toast.makeText(activity, R.string.game_launch_in_progress, Toast.LENGTH_SHORT).show()
@@ -142,6 +146,41 @@ object GameLauncher {
             }
             dialog.dismiss()
         }
+    }
+
+    private fun isRuntimeOlderThanMod(game: LoveGame, runtime: InstalledKristalRuntime): Boolean {
+        val required = game.engineVer?.trim()?.takeIf(String::isNotBlank) ?: return false
+        return VersionUtils.isNewer(required, runtime.version)
+    }
+
+    private fun showRuntimeVersionMismatchDialog(
+        activity: AppCompatActivity,
+        game: LoveGame,
+        runtime: InstalledKristalRuntime
+    ) {
+        val dialogContext = ThemeManager.themedContext(activity)
+        MaterialAlertDialogBuilder(dialogContext)
+            .setTitle(R.string.kristal_mod_version_mismatch_title)
+            .setMessage(
+                activity.getString(
+                    R.string.kristal_mod_version_mismatch_message,
+                    game.title,
+                    game.engineVer.orEmpty(),
+                    runtime.version
+                )
+            )
+            .setNeutralButton(R.string.cancel, null)
+            .setNegativeButton(R.string.kristal_mod_version_mismatch_launch) { _, _ ->
+                launchGame(activity, game, skipVersionCheck = true)
+            }
+            .setPositiveButton(R.string.game_runtime_manage) { _, _ ->
+                activity.startActivity(Intent(activity, KristalRuntimeSettingsActivity::class.java))
+            }
+            .create()
+            .also { dialog ->
+                dialog.showThemed()
+                ThemeManager.applyDialogTheme(dialog)
+            }
     }
 
     private fun showMissingKristalRuntimeDialog(activity: AppCompatActivity, game: LoveGame) {
