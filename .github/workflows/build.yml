@@ -16,8 +16,6 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      - uses: android-actions/setup-android@v3
-
       - uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: 8.7
@@ -25,7 +23,48 @@ jobs:
       - name: Build debug APK
         run: gradle assembleDebug --no-daemon
 
+      - name: Restore signing key
+        uses: actions/cache@v4
+        with:
+          path: debug.keystore
+          key: kristal-debug-keystore-v1
+
+      - name: Merge runtime and sign
+        run: |
+          set -e
+          python3 - <<'PY'
+          import re, zipfile
+          src = "app/build/outputs/apk/debug/app-debug.apk"
+          dex = open("runtime/love2d/classes.dex", "rb").read()
+          zin = zipfile.ZipFile(src)
+          nums = []
+          for item in zin.infolist():
+              if item.filename == "classes.dex":
+                  nums.append(1)
+              else:
+                  m = re.fullmatch(r"classes(\d+)\.dex", item.filename)
+                  if m:
+                      nums.append(int(m.group(1)))
+          new = "classes%d.dex" % (max(nums) + 1)
+          sig = re.compile(r"(?i)META-INF/(MANIFEST\.MF|.*\.(SF|RSA|DSA|EC))$")
+          with zipfile.ZipFile("merged.apk", "w") as zout:
+              for item in zin.infolist():
+                  if sig.match(item.filename):
+                      continue
+                  zout.writestr(item, zin.read(item.filename))
+              zout.writestr(new, dex, compress_type=zipfile.ZIP_DEFLATED)
+          print("added", new)
+          PY
+          BT=$(ls -d "$ANDROID_HOME"/build-tools/* | sort -V | tail -1)
+          "$BT/zipalign" -f -p 4 merged.apk aligned.apk
+          [ -f debug.keystore ] || keytool -genkeypair -keystore debug.keystore \
+            -storepass android -keypass android -alias key -keyalg RSA \
+            -keysize 2048 -validity 10000 -dname "CN=Kristal Debug"
+          "$BT/apksigner" sign --ks debug.keystore --ks-pass pass:android \
+            --key-pass pass:android --ks-key-alias key \
+            --out KristalLauncher-debug.apk aligned.apk
+
       - uses: actions/upload-artifact@v4
         with:
           name: KristalLauncher-debug
-          path: app/build/outputs/apk/debug/*.apk
+          path: KristalLauncher-debug.apk

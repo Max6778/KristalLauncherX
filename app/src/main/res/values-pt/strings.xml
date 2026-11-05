@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kristal Launcher</string>
+    <string name="beta_badge">BETA</string>
+    <string name="select_folder">Selecionar Pasta</string>
+    <string name="select_folder_dialog_title">Nenhuma pasta de jogos selecionada</string>
+    <string name="select_folder_dialog_desc">Selecione o diretório onde seus jogos (.love) estão salvos para começar a jogar.</string>
+    <string name="no_games_found">Nenhum jogo encontrado na pasta selecionada.</string>
+    <string name="select_folder_prompt">Toque no botão para selecionar o diretório dos seus jogos.</string>
+    <string name="tv_games_folder_button">Pasta de jogos</string>
+    <string name="tv_games_folder_hint">Copie jogos .love, .zip ou .exe para %1$s e recarregue a biblioteca.</string>
+    <string name="launch_game">Jogar</string>
+    <string name="search_hint">Buscar jogos…</string>
+    <string name="refresh_folder">Recarregar Pasta</string>
+    <string name="toggle_view">Alternar Exibição</string>
+    <string name="settings">Configurações</string>
+    <string name="settings_title">Configurações</string>
+
+    <!-- Add games tutorial -->
+    <string name="tutorial_help_action">Como adicionar jogos</string>
+    <string name="tutorial_quick_guide">Guia rápido</string>
+    <string name="tutorial_dialog_title">Como colocar jogos no app</string>
+    <string name="tutorial_close">Fechar tutorial</string>
+    <string name="tutorial_step_counter">Passo %1$d de %2$d</string>
+    <string name="tutorial_previous">Voltar</string>
+    <string name="tutorial_next">Próximo</string>
+    <string name="tutorial_done">Concluir</string>
+    <string name="tutorial_choose_folder_now">Escolher pasta</string>
+    <string name="tutorial_supported_files">Arquivos compatíveis</string>
+    <string name="tutorial_supported_extensions">.love · .zip · .exe compatível</string>
+    <string name="switch_state_on">Ligado</string>
+    <string name="switch_state_off">Desligado</string>
+
+    <string name="tutorial_step_1_title">1. Prepare uma pasta de jogos</string>
+    <string name="tutorial_step_1_body">Abra o app de arquivos do celular. Crie uma pasta chamada “Jogos” — ou use a pasta que você já escolheu antes. Um lugar fácil é Downloads/Jogos.</string>
+    <string name="tutorial_step_1_tip">💡 Importante: o app não baixa jogos. Ele só encontra e organiza arquivos que já estão no aparelho.</string>
+
+    <string name="tutorial_step_2_title">2. Coloque os jogos dentro dela</string>
+    <string name="tutorial_step_2_body">Copie ou mova os arquivos de jogo para essa pasta. O app aceita .love, .zip e alguns .exe feitos para LÖVE/Kristal.</string>
+    <string name="tutorial_step_2_tip">✓ Deixe os arquivos direto na pasta escolhida. O app não procura jogos dentro de outras pastas.</string>
+
+    <string name="tutorial_step_3_title">3. Toque em “Selecionar Pasta”</string>
+    <string name="tutorial_step_3_body">No app, toque em “Selecionar Pasta”. Depois, abra a pasta onde você colocou os jogos.</string>
+    <string name="tutorial_step_3_tip">📁 Se essa pasta já estiver escolhida no app, não precisa escolher de novo. Puxe a biblioteca para baixo para atualizar.</string>
+
+    <string name="tutorial_step_4_title">4. Toque em “Usar esta pasta”</string>
+    <string name="tutorial_step_4_body">No seletor do Android, abra sua pasta de jogos e toque em “Usar esta pasta”. Se aparecer outra confirmação, permita o acesso.</string>
+    <string name="tutorial_step_4_tip">🔒 O app usa esse acesso para ler os jogos da pasta que você escolheu.</string>
+
+    <string name="tutorial_step_5_title">5. Pronto! Seus jogos vão aparecer</string>
+    <string name="tutorial_step_5_body">A biblioteca é carregada automaticamente. Use o botão Jogar para abrir um jogo.</string>
+    <string name="tutorial_step_5_tip">Não apareceu? Confira se o arquivo é .love, .zip ou um .exe compatível, se está direto na pasta e puxe a lista para baixo para atualizar.</string>
+
+    <string name="tutorial_mock_games_folder">JOGOS</string>
+    <string name="tutorial_mock_games_path">Downloads / Jogos</string>
+    <string name="tutorial_mock_use_folder">USAR ESTA PASTA</string>
+    <string name="tutorial_mock_library_ready">JOGOS ENCONTRADOS</string>
+    <string name="tutorial_mock_engine_kristal">Kristal</string>
+
+    <!-- Bottom navigation tabs -->
+    <string name="tab_library">Biblioteca</string>
+    <string name="tab_recent">Recente</string>
+    <string name="tab_favorites">Favoritos</string>
+    <string name="add_games">Adicionar Jogos</string>
+
+    <!-- Overflow menu actions -->
+    <string name="add_favorite">Adicionar aos Favoritos</string>
+    <string name="remove_favorite">Remover dos Favoritos</string>
+    <string name="remove_from_list">Remover da Lista</string>
+
+    <!-- Settings sections -->
+    <string name="section_general">GERAL</string>
+    <string name="section_storage">ARMAZENAMENTO</string>
+    <string name="section_about">SOBRE</string>
+
+    <string name="app_language">Idioma do Aplicativo</string>
+    <string name="appearance_title">Aparência</string>
+    <string name="current_folder">Pasta Atual de Jogos</string>
+    <string name="change_folder">Alterar Pasta</string>
+    <string name="clear_folder">Remover Pasta</string>
+    <string name="clear_cache">Limpar Cache de Jogos</string>
+    <string name="clear_cache_desc">Remove capas e metadados salvos localmente.</string>
+    <string name="about_title">Kristal Launcher v%1$s</string>
+    <string name="about_desc">Launcher para Kristal Engine no Android. Organize e execute seus jogos com controles touch, patches de compatibilidade e opções pensadas para dispositivos móveis.</string>
+
+    <!-- Exit Menu Overlay -->
+    <string name="exit_dialog_title">Sair do jogo?</string>
+    <string name="exit_dialog_message">Deseja encerrar a execução da partida atual e voltar ao launcher?</string>
+    <string name="exit_game">Sair</string>
+    <string name="cancel">Cancelar</string>
+
+    <!-- Languages -->
+    <string name="lang_pt">Português</string>
+    <string name="lang_en">English</string>
+    <string name="lang_es">Español</string>
+    <string name="lang_device">Idioma do dispositivo</string>
+    <string name="language_title">Idioma</string>
+    <string name="language_summary">Escolha o idioma da interface. A opção do dispositivo acompanha automaticamente o idioma do Android.</string>
+    <string name="language_options_title">IDIOMA DO LAUNCHER</string>
+    <string name="lang_device_option">Idioma do dispositivo</string>
+    <string name="lang_pt_option">Português</string>
+    <string name="lang_en_option">English</string>
+    <string name="lang_es_option">Español</string>
+    <string name="language_code_pt">PT</string>
+    <string name="language_code_en">EN</string>
+    <string name="language_code_es">ES</string>
+    <string name="theme_title">TEMA</string>
+    <string name="theme_device">Seguir o dispositivo</string>
+    <string name="theme_light">Claro</string>
+    <string name="theme_deltarune">DELTARUNE</string>
+    <string name="theme_deltarune_amoled">AMOLED</string>
+    <string name="theme_dark">Escuro</string>
+    <string name="appearance_summary">Personalize a aparência do launcher e escolha quanto movimento deseja na interface.</string>
+    <string name="theme_device_option">Seguir o dispositivo</string>
+    <string name="theme_light_option">Claro</string>
+    <string name="theme_deltarune_option">DELTARUNE</string>
+    <string name="theme_dark_option">Escuro</string>
+    <string name="motion_title">MOVIMENTO</string>
+    <string name="animations_enabled">Animações e transições</string>
+    <string name="animations_summary">Suaviza a abertura das páginas e destaca a hierarquia da navegação. Desative para remover todo o movimento adicional.</string>
+
+    <!-- Compatibility patches -->
+    <string name="action_patches">Patches</string>
+    <string name="patches_settings_title">Patches de compatibilidade</string>
+    <string name="patches_settings_header">Estes são os patches globais aplicados a todos os jogos por padrão. Você pode forçar a ativação ou desativação deles para jogos específicos clicando no ícone de engrenagem na lista de jogos.</string>
+
+    <string name="patch_text_title">Patch de Texto Acumulado</string>
+    <string name="patch_text_desc">Resolve o problema do Kristal Engine em que textos de batalha (como \'The tutorial begins…?\') não desaparecem da tela ao abrir o menu, acumulando-se uns sobre os outros.\n\n⚠️ Ocasionalmente, pode causar pequenos recarregamentos visuais do texto na tela.</string>
+    <string name="patch_text_warning">Desativar o patch de Texto Acumulativo pode fazer trechos antigos permanecerem visíveis durante os diálogos em alguns jogos.\n\nDeseja realmente desativar?</string>
+    <string name="patch_fullscreen_title">Tela Cheia Imersiva</string>
+    <string name="patch_fullscreen_desc">Força a ocultação da barra de navegação e barra de status do Android (modo imersivo), permitindo que o jogo utilize toda a extensão da tela do seu dispositivo.</string>
+    <string name="patch_shaders_title">Patch de Shaders (Coversor GLSL ES)</string>
+    <string name="patch_shaders_desc">Shaders de mods criados para PC costumam falhar e causar tela preta no Android. Este patch converte dinamicamente a sintaxe do GLSL para funcionar nas rígidas regras do OpenGL ES de celulares (corrige aritmética mista, mod(), palavras reservadas, etc).\n\n⚠️ Mantenha ativado, a menos que o jogo perca a cor completamente.</string>
+    <string name="patch_shaders_warning">Desativar o patch de shaders GLSL ES pode causar telas pretas, congelamentos ou erros de inicialização na maioria dos jogos Kristal/LÖVE2D no Android.\n\nDeseja realmente desativar?</string>
+    <string name="patch_gamepad_title">Controles Virtuais Touch</string>
+    <string name="patch_gamepad_desc">Injeta um gamepad virtual transparente na tela (botões Z, X, C, Setas, etc). Necessário se você não possui um controle físico ou teclado Bluetooth conectado.</string>
+    <string name="patch_borders_title">Patch de Bordas Relativas</string>
+    <string name="patch_borders_desc">Muitos mods da Kristal Engine utilizam bordas de tela desenhadas para o aspect ratio fixo do PC (4:3). Este patch espelha e redimensiona as bordas dinamicamente para não ficarem cortadas nas telas largas (16:9, 20:9) dos celulares modernos.</string>
+    <string name="patch_rgba16_title">Conversão RGBA16</string>
+    <string name="patch_rgba16_desc">O Android não suporta imagens em formato de 16-bits por canal de cor. Se um mod possuir sprites salvos dessa forma, o jogo fechará ou a tela ficará preta. Este patch converte as imagens afetadas para 8-bits na memória automaticamente.</string>
+    <string name="patch_physfs_title">Anti-Crash PhysFS (Stack Overflow)</string>
+    <string name="patch_physfs_desc">A engine de busca de arquivos virtual do LÖVE (PhysFS) pode entrar em loop infinito se um mod tiver caminhos que referenciam o próprio diretório base de forma recursiva. Este patch impõe um limite seguro na busca para evitar crashes.</string>
+    <string name="patch_nil_arithmetic_title">Sanitização de Nil Arithmetic &amp; Áudio</string>
+    <string name="patch_nil_arithmetic_desc">Impede que a engine sofra um crash imediato (\'attempt to perform arithmetic on a nil value\') se um mod tentar manipular o volume de uma música que não carregou corretamente ou inicializou sem valor no config.</string>
+
+    <string name="patch_list_text">Patch de Texto Acumulado</string>
+    <string name="patch_list_text_warning">⚠️ Aviso: desativar pode fazer textos antigos se acumularem na tela.</string>
+    <string name="patch_list_fullscreen">Tela Cheia Imersiva</string>
+    <string name="patch_list_shaders">Patch de Shaders (GLSL ES)</string>
+    <string name="patch_list_shaders_warning">⚠️ Aviso: Desativar pode causar telas pretas ou erros.</string>
+    <string name="patch_list_gamepad">Controles Virtuais Touch</string>
+    <string name="patch_list_borders">Patch de Bordas Relativas</string>
+    <string name="patch_list_rgba16">Conversão RGBA16</string>
+    <string name="patch_list_physfs">Anti-Crash PhysFS (Stack Overflow)</string>
+    <string name="patch_list_nil_arithmetic">Sanitização de Nil Arithmetic &amp; Áudio</string>
+
+    <string name="game_patch_text">Patch de Texto</string>
+    <string name="game_patch_fullscreen">Tela Cheia Imersiva</string>
+    <string name="game_patch_shaders">Shaders (GLSL ES)</string>
+    <string name="game_patch_gamepad">Controles Touch</string>
+    <string name="game_patch_borders">Bordas Relativas</string>
+    <string name="game_patch_rgba16">Conversão RGBA16</string>
+    <string name="game_patch_physfs">Anti-Crash PhysFS</string>
+    <string name="game_patch_nil_arithmetic">Sanitização de Áudio</string>
+
+    <string name="game_patch_text_desc">Resolve o problema de textos de batalha acumulados na tela.</string>
+    <string name="game_patch_fullscreen_desc">Força o modo imersivo (sem barras do Android).</string>
+    <string name="game_patch_shaders_desc">Converte dinamicamente shaders de PC para Android.</string>
+    <string name="game_patch_gamepad_desc">Força a adição de controles virtuais na tela.</string>
+    <string name="game_patch_borders_desc">Impede que as bordas originais do jogo fiquem cortadas.</string>
+    <string name="game_patch_rgba16_desc">Converte imagens não-suportadas para evitar crashes.</string>
+    <string name="game_patch_physfs_desc">Impede loop infinito ao ler certas pastas do mod.</string>
+    <string name="game_patch_nil_arithmetic_desc">Evita crash se houver problemas de áudio.</string>
+
+    <string name="patch_mode_global">Global</string>
+    <string name="patch_mode_enable">Ativar</string>
+    <string name="patch_mode_disable">Desativar</string>
+
+    <string name="game_patches_dialog_title">Patches: %s</string>
+    <string name="save">Salvar</string>
+    <string name="patches_saved">Patches salvos com sucesso!</string>
+    <string name="warning_attention">⚠️ Atenção</string>
+    <string name="enable">Ativar</string>
+    <string name="disable">Desativar</string>
+    <string name="keep_enabled">Manter Ativo</string>
+    <string name="ok">OK</string>
+
+    <!-- Runtime messages and dynamic labels -->
+    <string name="game_author">por %1$s</string>
+    <string name="no_favorite_games">Nenhum jogo favoritado</string>
+    <string name="no_favorite_games_hint">Adicione jogos aos favoritos pelo menu de 3 pontos.</string>
+    <string name="no_recent_games">Nenhum jogo jogado recentemente</string>
+    <string name="no_recent_games_hint">Jogos que você abrir aparecerão aqui.</string>
+    <string name="overlay_menu_title">Menu do Jogo</string>
+    <string name="overlay_exit_game">Sair do Jogo</string>
+    <string name="overlay_resume_game">Voltar ao Jogo</string>
+    <string name="preparing_game">Preparando %1$s…\nCarregando jogo, por favor aguarde.</string>
+    <string name="error_game_file_unavailable">Erro: não foi possível acessar o arquivo do jogo.</string>
+    <string name="error_invalid_love_executable">Erro: o arquivo .exe não contém um jogo LÖVE2D válido.</string>
+    <string name="error_nested_game_unavailable">Erro: o jogo interno não foi encontrado no arquivo ZIP.</string>
+    <string name="error_executable_stream">Erro ao abrir o fluxo de dados do executável.</string>
+    <string name="error_empty_or_corrupt_game">Erro: o arquivo do jogo está vazio ou corrompido.</string>
+    <string name="error_loading_game">Erro ao carregar o jogo: %1$s</string>
+    <string name="error_incompatible_love_runtime">O runtime LÖVE2D incluído é incompatível com esta versão. Reinstale o launcher usando um APK oficial.</string>
+    <string name="navigate_back">Voltar</string>
+    <string name="filter_games">Filtrar jogos</string>
+    <string name="more_options">Mais opções</string>
+    <string name="game_details_close">Fechar detalhes do jogo</string>
+    <string name="game_details_favorite">Favorito</string>
+    <string name="game_details_info">Info</string>
+    <string name="game_details_compatibility">Compatibilidade</string>
+    <string name="game_details_more">Mais</string>
+    <string name="game_details_manage_patches">Gerenciar patches do jogo</string>
+    <string name="game_details_about">Sobre</string>
+    <string name="game_details_author">Autor</string>
+    <string name="game_details_project_id">ID do projeto</string>
+    <string name="game_details_chapter">Capítulo</string>
+    <string name="game_details_start_map">Mapa inicial</string>
+    <string name="game_details_party">Grupo inicial</string>
+    <string name="game_details_file">Arquivo</string>
+    <string name="game_details_no_description">Nenhuma descrição foi fornecida para este jogo.</string>
+    <string name="loading_game">Carregando…</string>
+    <string name="section_compatibility">COMPATIBILIDADE</string>
+    <string name="patches_settings_summary">Ajustes para jogos que precisam de ajuda no Android</string>
+    <!-- Patch Center -->
+    <string name="patch_author_launcher">Equipe Kristal Launcher</string>
+    <string name="patch_center_title">Patches</string>
+    <string name="patch_center_summary">Ative soluções integradas ou instale extras publicados no repositório.</string>
+    <string name="patch_refresh_catalog">Atualizar catálogo de patches</string>
+    <string name="patch_tab_installed">Instalados</string>
+    <string name="patch_tab_discover">Extras</string>
+    <string name="patch_version">Versão %1$s</string>
+    <string name="patch_metadata">%1$s • %2$s</string>
+    <string name="patch_origin_built_in">Integrado</string>
+    <string name="patch_origin_official">Catálogo oficial</string>
+    <string name="patch_origin_imported">Importado</string>
+    <string name="patch_trust_built_in">INTEGRADO</string>
+    <string name="patch_trust_verified">VERIFICADO</string>
+    <string name="patch_trust_unverified">NÃO VERIFICADO</string>
+    <string name="patch_download">Baixar</string>
+    <string name="patch_downloading">Baixando…</string>
+    <string name="patch_validating">Validando…</string>
+    <string name="patch_installing">Instalando…</string>
+    <string name="patch_update">Atualizar</string>
+    <string name="patch_installed">Instalado</string>
+    <string name="patch_enabled_by_default">Ativado</string>
+    <string name="patch_when_useful">Onde ajuda</string>
+    <string name="patch_use_cases_title">Quando usar “%1$s”</string>
+    <string name="patch_use_cases_empty">Este pacote não informou situações de uso.</string>
+    <string name="patch_import">Importar pacote .klpatch</string>
+    <string name="patch_catalog_cached">Não foi possível atualizar o catálogo. Exibindo a última cópia salva.</string>
+    <string name="patch_catalog_unavailable">Catálogo indisponível</string>
+    <string name="patch_catalog_error">Verifique sua conexão e tente novamente.\n\nDetalhes: %1$s</string>
+    <string name="patch_catalog_empty">Nenhum patch extra disponível</string>
+    <string name="patch_catalog_empty_message">Novos pacotes aparecerão aqui quando forem adicionados à pasta patches do repositório.</string>
+    <string name="patch_installed_empty">Nenhum patch instalado</string>
+    <string name="patch_installed_empty_message">Importe um pacote externo ou consulte o catálogo oficial.</string>
+    <string name="patch_missing_dependencies">Dependências ausentes ou desativadas: %1$s</string>
+    <string name="patch_enabled_conflicts">Conflitos atualmente ativados: %1$s</string>
+    <string name="patch_cannot_enable">Não foi possível ativar o patch</string>
+    <string name="patch_unverified_enable_warning">“%1$s” foi importado de uma fonte não verificada. Ele poderá modificar a cópia preparada dos jogos e executar código Lua dentro do runtime. Ative somente se confiar na origem.</string>
+    <string name="patch_download_confirm_title">Baixar patch verificado?</string>
+    <string name="patch_download_confirm_message">Baixar e validar “%1$s” versão %2$s do catálogo oficial? O patch será instalado desativado.</string>
+    <string name="patch_update_confirm_title">Atualizar patch?</string>
+    <string name="patch_update_confirm_message">Baixar e validar a versão %2$s de “%1$s”? A configuração atual será preservada.</string>
+    <string name="patch_update_available_title">Atualização disponível para “%1$s”</string>
+    <string name="patch_update_available_message">Versão instalada: %1$s\nNova versão: %2$s\n\n%3$s</string>
+    <string name="patch_update_notes_unavailable">Esta atualização não possui notas de versão.</string>
+    <string name="patch_import_confirm_title">Importar patch externo?</string>
+    <string name="patch_import_confirm_message">O pacote será validado e armazenado na área privada do aplicativo. Patches importados não são verificados e permanecem desativados até sua confirmação.</string>
+    <string name="patch_install_success">%1$s foi instalado e está desativado.</string>
+    <string name="patch_install_failed">Não foi possível instalar o patch</string>
+    <string name="patch_install_verification_failed">A instalação não pôde ser confirmada no armazenamento do aplicativo.</string>
+    <string name="patch_none">Nenhum</string>
+    <string name="patch_details_body">%1$s\n\nAutor: %2$s\nVersão: %3$s\nIdentificador: %4$s\nCapacidades: %5$s\nDependências: %6$s\nConflitos: %7$s</string>
+    <string name="patch_uninstall">Desinstalar</string>
+    <string name="patch_uninstall_confirm_title">Desinstalar patch?</string>
+    <string name="patch_uninstall_confirm_message">“%1$s” será removido do armazenamento privado. Os jogos originais não serão alterados.</string>
+    <string name="patch_uninstalled">Patch desinstalado.</string>
+    <string name="patch_uninstall_failed">Não foi possível desinstalar o patch.</string>
+    <string name="patch_mode_inherit">Herdar</string>
+    <string name="game_patches_dialog_summary">Escolha se cada patch deve herdar o padrão global ou ser forçado somente para este jogo.</string>
+    <string name="patch_section_dedicated">Patches dedicados</string>
+    <string name="patch_section_generic">Patches genéricos</string>
+    <string name="game_patch_download_confirm_message">Baixar e validar “%1$s” versão %2$s do catálogo oficial? Ele será ativado somente para este jogo.</string>
+    <string name="game_patch_install_success">“%1$s” foi instalado e ativado para este jogo.</string>
+    <string name="patch_game_effective_forced_enabled">Resultado: ativado somente neste jogo</string>
+    <string name="patch_game_effective_forced_disabled">Resultado: desativado somente neste jogo</string>
+    <string name="patch_game_effective_inherited_enabled">Resultado: ativado pelo padrão global</string>
+    <string name="patch_game_effective_inherited_disabled">Resultado: desativado pelo padrão global</string>
+    <string name="patch_game_unverified_warning">Os seguintes patches importados serão forçados para este jogo: %1$s. Continue somente se confiar nas origens.</string>
+    <string name="preparing_game_with_patches">Preparando %1$s…\nAplicando patches com segurança.</string>
+    <string name="error_applying_patches">Não foi possível preparar os patches: %1$s</string>
+
+    <!-- About and updates -->
+    <string name="update_automatic_checks">Verificar atualizações automaticamente</string>
+    <string name="update_include_prereleases">Incluir versões de pré-lançamento</string>
+    <string name="update_include_prereleases_summary">Buscar versões de teste, além das versões estáveis.</string>
+    <string name="update_check_now">Verificar agora</string>
+    <string name="update_checking">Verificando…</string>
+    <string name="update_never_checked">Nenhuma verificação realizada.</string>
+    <string name="update_last_checked">Última verificação: %1$s</string>
+    <string name="about_open_github">Abrir repositório no GitHub</string>
+    <string name="update_no_release_notes">Esta versão não possui notas de lançamento.</string>
+    <string name="update_available_title">Atualização %1$s disponível</string>
+    <string name="update_available_message">Uma nova versão do Kristal Launcher está disponível.\n\n%1$s</string>
+    <string name="update_current_version">Atual · %1$s</string>
+    <string name="update_new_version">Nova · %1$s</string>
+    <string name="update_release_notes_title">Novidades</string>
+    <string name="update_download">Baixar</string>
+    <string name="update_view_release">Ver lançamento</string>
+    <string name="update_later">Depois</string>
+    <string name="update_up_to_date_title">Aplicativo atualizado</string>
+    <string name="update_up_to_date_message">Você já está usando a versão mais recente disponível no GitHub.</string>
+    <string name="update_check_failed_title">Falha ao verificar atualizações</string>
+    <string name="update_check_failed_message">Não foi possível consultar os lançamentos do GitHub.\n\nDetalhes: %1$s</string>
+    <string name="error_no_browser">Nenhum navegador está disponível para abrir o link.</string>
+    <string name="sort_by_name">Ordenar por nome (A–Z)</string>
+    <string name="sort_by_size">Ordenar por tamanho</string>
+
+    <string-array name="patch_text_use_cases">
+        <item>Textos de batalha permanecem na tela depois de abrir menus.</item>
+        <item>Mensagens e caixas de diálogo começam a se sobrepor.</item>
+    </string-array>
+    <string-array name="patch_fullscreen_use_cases">
+        <item>As barras do Android continuam visíveis durante o jogo.</item>
+        <item>O conteúdo não ocupa toda a área útil da tela.</item>
+    </string-array>
+    <string-array name="patch_shaders_use_cases">
+        <item>Para o jogos que exibe erros mencionado shaders, tela preta, efeitos ausentes ou cores incorretas.</item>
+        <item>Um shader criado para computador falha no OpenGL ES do Android.</item>
+    </string-array>
+    <string-array name="patch_gamepad_use_cases">
+        <item>Você joga sem teclado ou controle físico.</item>
+        <item>O jogo precisa das teclas Z, X, C ou setas para avançar.</item>
+    </string-array>
+    <string-array name="patch_borders_use_cases">
+        <item>Bordas e molduras ficam cortadas em telas largas.</item>
+        <item>Elementos laterais foram feitos para proporção 4:3.</item>
+    </string-array>
+    <string-array name="patch_rgba16_use_cases">
+        <item>O jogo fecha ou mostra tela preta ao carregar determinados sprites.</item>
+        <item>O pacote contém imagens de 16 bits por canal incompatíveis com Android.</item>
+    </string-array>
+    <string-array name="patch_physfs_use_cases">
+        <item>O jogo trava ao procurar arquivos ou pastas do mod.</item>
+        <item>O log indica recursão ou stack overflow no PhysFS.</item>
+    </string-array>
+    <string-array name="patch_nil_arithmetic_use_cases">
+        <item>O jogo fecha ao iniciar ou ajustar uma música ausente.</item>
+        <item>O erro menciona arithmetic on a nil value em código de áudio.</item>
+    </string-array>
+    <string name="game_engine_version">Kristal %1$s</string>
+    <string name="folder_permission_error">Não foi possível manter o acesso à pasta selecionada. Escolha outra pasta ou conceda o acesso novamente.</string>
+    <string name="folder_scan_error">Não foi possível ler a pasta de jogos: %1$s</string>
+    <string name="games_scan_partial_failure">Alguns arquivos não puderam ser lidos: %1$s. Os outros jogos continuam disponíveis.</string>
+    <string name="error_title">Erro</string>
+    <string name="game_launch_in_progress">Outro jogo já está sendo preparado.</string>
+    <string name="section_kristal_engine">Kristal Engine</string>
+    <string name="kristal_runtime_title">Runtime do Kristal Engine</string>
+    <string name="kristal_runtime_not_installed">Não instalado</string>
+    <string name="kristal_runtime_selected_version">Versão %1$s selecionada</string>
+    <string name="kristal_runtime_page_summary">Baixe versões oficiais do Kristal Engine, mantenha as versões necessárias disponíveis offline e escolha qual delas o launcher abrirá.</string>
+    <string name="kristal_runtime_refresh">Atualizar versões</string>
+    <string name="kristal_runtime_catalog_unavailable">Versões indisponíveis</string>
+    <string name="kristal_runtime_catalog_error">Não foi possível carregar as versões do Kristal: %1$s</string>
+    <string name="kristal_runtime_catalog_cached">O catálogo online está indisponível. Exibindo a lista salva mais recente.</string>
+    <string name="kristal_runtime_version">Kristal %1$s</string>
+    <string name="kristal_runtime_prerelease">Pré-lançamento</string>
+    <string name="kristal_runtime_download_progress">%1$s / %2$s</string>
+    <string name="kristal_runtime_downloaded_amount">%1$s baixados</string>
+    <string name="kristal_runtime_selected">Selecionada</string>
+    <string name="kristal_runtime_recommended">Recomendada</string>
+    <string name="kristal_runtime_download">Baixar</string>
+    <string name="kristal_runtime_select">Selecionar</string>
+    <string name="kristal_runtime_downloading">Baixando…</string>
+    <string name="kristal_runtime_validating">Validando…</string>
+    <string name="kristal_runtime_installing">Instalando…</string>
+    <string name="kristal_runtime_install_success">O Kristal %1$s foi baixado e selecionado.</string>
+    <string name="kristal_runtime_install_failed">Não foi possível instalar o runtime: %1$s</string>
+    <string name="kristal_runtime_selection_saved">Versão do runtime selecionada.</string>
+    <string name="kristal_runtime_remove">Remover</string>
+    <string name="kristal_runtime_remove_title">Remover runtime?</string>
+    <string name="kristal_runtime_remove_message">O Kristal %1$s será removido do armazenamento privado do launcher.</string>
+    <string name="kristal_runtime_removed">Runtime removido.</string>
+    <string name="kristal_runtime_remove_failed">Não foi possível remover o runtime.</string>
+    <string name="kristal_runtime_open">Abrir o Kristal Engine</string>
+    <string name="kristal_runtime_launch_title">Kristal Engine %1$s</string>
+    <string name="game_runtime_choose">Escolher versão do runtime</string>
+    <string name="game_runtime_selected">Runtime · Kristal %1$s</string>
+    <string name="game_runtime_not_installed">Runtime não instalado</string>
+    <string name="game_runtime_none_available">Baixe pelo menos um runtime do Kristal antes de escolher uma versão para este mod.</string>
+    <string name="game_runtime_use_default">Usar padrão · Kristal %1$s</string>
+    <string name="game_runtime_manage">Gerenciar versões</string>
+    <string name="kristal_mod_runtime_required_title">Kristal Engine necessário</string>
+    <string name="kristal_mod_runtime_required_message">%1$s é um mod do Kristal e não pode ser executado sozinho. Deseja baixar um runtime do Kristal Engine agora?</string>
+    <string name="kristal_mod_runtime_missing_error">Nenhum runtime do Kristal Engine está instalado.</string>
+    <string name="kristal_mod_invalid_error">Este mod do Kristal não possui um ID válido.</string>
+    <string name="back">Voltar</string>
+    <string name="community_languages">Idiomas</string>
+    <string name="translation_experimental_info_action">Sobre os idiomas experimentais</string>
+    <string name="translation_experimental_title">Função experimental</string>
+    <string name="translation_experimental_message">Os idiomas da comunidade ainda são experimentais. Uma tradução pode não funcionar corretamente em todos os jogos ou versões.</string>
+    <string name="community_languages_summary">Escolha uma tradução da comunidade para este jogo ou crie a sua. Arquivos da engine nunca são incluídos.</string>
+    <string name="translation_original_game">Idioma original</string>
+    <string name="translation_create">Criar tradução</string>
+    <string name="translation_create_short">Criar</string>
+    <string name="translation_version_warning_title">Aviso de versão da tradução</string>
+    <string name="translation_version_warning_message">Esta tradução foi criada para a versão %1$s do jogo, mas o jogo instalado está na versão %2$s. Ela pode não funcionar corretamente.</string>
+    <string name="translation_version_unknown">desconhecida</string>
+    <string name="translation_select">Selecionar tradução</string>
+    <string name="translation_edit">Editar tradução</string>
+    <string name="translation_progress">%1$d / %2$d traduzidos</string>
+    <string name="translation_choose_language">Idioma da tradução</string>
+    <string name="translation_language_pt_br">Português (Brasil)</string>
+    <string name="translation_language_es">Espanhol</string>
+    <string name="translation_language_en">Inglês</string>
+    <string name="translation_creation_failed_title">Não foi possível criar a tradução</string>
+    <string name="translation_creation_failed">Os textos do jogo/mod não puderam ser analisados com segurança.</string>
+    <string name="translation_editor_title">Editor de tradução</string>
+    <string name="translation_editor_for_game">Traduzir %1$s</string>
+    <string name="translation_texts_tab">Textos</string>
+    <string name="translation_images_tab">Imagens · Em breve</string>
+    <string name="translation_search">Buscar textos</string>
+    <string name="translation_not_translated">Não traduzido</string>
+    <string name="translation_entry_context">%1$s · %2$s:%3$d</string>
+    <string name="translation_entry_title">Editar texto</string>
+    <string name="translation_original_label">ORIGINAL</string>
+    <string name="translation_field_label">Tradução</string>
+    <string name="translation_export">Exportar tradução</string>
+    <string name="translation_export_success">Tradução exportada com sucesso.</string>
+    <string name="translation_export_failed">Não foi possível exportar a tradução.</string>
+    <string name="translation_error_format_placeholder">Mantenha todos os marcadores de formatação do texto original.</string>
+    <string name="translation_error_control_tag">Mantenha todas as tags de controle do texto original.</string>
+    <string name="translation_download">Baixar</string>
+    <string name="translation_update">Atualizar</string>
+    <string name="translation_downloading">Baixando…</string>
+    <string name="translation_validating">Validando…</string>
+    <string name="translation_installing">Instalando…</string>
+    <string name="translation_download_progress">%1$s / %2$s</string>
+    <string name="translation_downloaded_amount">%1$s baixados</string>
+    <string name="translation_community_summary">%1$s · v%2$s · %3$s</string>
+    <string name="translation_none_available">Nenhuma tradução está disponível para esta versão do jogo.</string>
+    <string name="translation_install_failed_title">Não foi possível instalar a tradução</string>
+    <string name="translation_install_failed">A tradução não pôde ser baixada ou validada.</string>
+    <string name="translation_import">Importar</string>
+    <string name="translation_import_failed_title">Não foi possível importar a tradução</string>
+    <string name="translation_import_failed">O arquivo é inválido, pertence a outro jogo/versão ou não corresponde mais aos arquivos do jogo.</string>
+    <string name="translation_settings_title">Configurações da tradução</string>
+    <string name="translation_settings_summary">Edite as informações armazenadas neste projeto de tradução.</string>
+    <string name="translation_project_name">Nome do projeto</string>
+    <string name="translation_project_author">Autor</string>
+    <string name="translation_project_name_required">Informe um nome para o projeto.</string>
+    <string name="translation_project_language_required">Selecione um idioma da lista.</string>
+    <string name="translation_settings_saved">Configurações da tradução salvas.</string>
+    <string name="translation_settings_save_failed">Não foi possível salvar as configurações da tradução.</string>
+    <string name="translation_project_data">Dados do projeto</string>
+    <string name="translation_project_data_summary">Limpe apenas os textos traduzidos ou exclua permanentemente este projeto local.</string>
+    <string name="translation_clear_title">Limpar todas as traduções?</string>
+    <string name="translation_clear_message">Todos os campos traduzidos serão esvaziados. O projeto e os textos originais extraídos continuarão disponíveis.</string>
+    <string name="translation_clear_action">Limpar tudo</string>
+    <string name="translation_cleared">Todos os textos traduzidos foram limpos.</string>
+    <string name="translation_delete_title">Excluir projeto de tradução?</string>
+    <string name="translation_delete_message">Este projeto local e todos os seus textos traduzidos serão excluídos permanentemente.</string>
+    <string name="translation_delete_action">Excluir projeto</string>
+    <string name="translation_edit_external">Editar externamente</string>
+    <string name="translation_external_editor_unavailable">Nenhum editor de JSON compatível está instalado.</string>
+    <string name="translation_external_changes_applied">%1$d textos editados externamente foram importados.</string>
+    <string name="translation_external_sync_failed">O JSON editado externamente não pôde ser validado ou importado.</string>
+    <string name="translation_filter_all">Todos</string>
+    <string name="translation_filter_pending">Pendentes</string>
+    <string name="translation_filter_translated">Traduzidos</string>
+    <string name="translation_filter_all_types">Todos os tipos</string>
+    <string name="patch_recommended">Recomendado</string>
+    <string name="patch_recommendation_frostveil">Frostveil precisa do patch Sanitização de números e áudio para evitar falhas causadas por valores numéricos ou estados de áudio ausentes.</string>
+    <string name="patch_recommendation_starrune">StarRune precisa da Conversão RGBA16 para imagens que o Android não consegue carregar no formato original.</string>
+    <string name="patch_recommendation_godhome">Godhome precisa do patch de Shaders para adaptar os shaders de computador aos gráficos do Android.</string>
+    <string name="patch_recommendation_cooking">Na DEMO v1.0.6 de Cooking with Kindness, esta otimização experimental corrige lentidão intensa nas batalhas e falhas no tutorial da Toriel no Android.</string>
+</resources>
