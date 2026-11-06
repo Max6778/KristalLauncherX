@@ -110,16 +110,18 @@ object GameScanner {
         candidate: GameFileCandidate
     ): CandidateParseResult {
         return try {
+            val parsedGames = LoveMetadataParser.parseLoveFiles(
+                context = context,
+                uri = candidate.uri,
+                fileName = candidate.name,
+                sizeBytes = candidate.sizeBytes,
+                lastModified = candidate.lastModified
+            )
             CandidateParseResult(
                 sourceKey = candidate.uri.toString(),
-                games = LoveMetadataParser.parseLoveFiles(
-                    context = context,
-                    uri = candidate.uri,
-                    fileName = candidate.name,
-                    sizeBytes = candidate.sizeBytes,
-                    lastModified = candidate.lastModified
-                ),
-                failedFileName = null
+                games = parsedGames,
+                // An unrecognized file used to disappear silently; now it is reported.
+                failedFileName = if (parsedGames.isEmpty()) candidate.name else null
             )
         } catch (error: CancellationException) {
             throw error
